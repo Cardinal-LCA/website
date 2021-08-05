@@ -1,0 +1,161 @@
+body, html{
+    background-color: #f5f5f5;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: 768px) {
+  .text-sm-left { text-align: left; }
+  .text-sm-right { text-align: right; }
+  .text-sm-center { text-align: center; }
+  .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: 992px) {
+  .text-md-left { text-align: left; }
+  .text-md-right { text-align: right; }
+  .text-md-center { text-align: center; }
+  .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: 1200px) {
+  .text-lg-left { text-align: left; }
+  .text-lg-right { text-align: right; }
+  .text-lg-center { text-align: center; }
+  .text-lg-justify { text-align: justify; }
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #979797;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(175, 175, 175);
+}
+.navbar_resize {
+  min-height: 60px;
+  transition: 0.2s;
+  background-color: white;
+}
+.navbar_noresize {
+  min-height: 78px;
+  transition: 0.2s;
+}
+.navbar_color{
+    background-color: white !important;
+}
+.navbar_logo_noresize {
+  height: 52px;
+  transition: 0.2s;
+}
+.navbar_logo_resize {
+  height: 40px;
+  transition: 0.2s;
+  margin-top: -3px;
+}
+.navbar_toggler_noresize {
+  margin-top: 0px;
+  transition: 0.2s;
+}
+.navbar_toggler_resize {
+  margin-top: -6px;
+  transition: 0.2s;
+}
+.navbar-collapse{
+    text-align: center;
+}
+.nav-link{
+    font-weight: 500;
+}
+.nav_login{
+    background: #D52A1B;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px !important;
+    color: white !important;
+}
+.nav_login:hover{
+    background: #bd191f;
+    color: white;
+    transition: 0.3s;
+}
+.navbar-collapse{
+    border-radius: 0 0 5px 5px;
+}
+@media screen and (max-width: 992px) {
+    .navbar-collapse{
+        background-color: white;
+        text-align: center;
+    }
+}
+.company_text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 59px;
+    color: #AD1F12 !important;
+}
+header{
+    min-height: 100vh;
+    background: url(../images/background/landing_background.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: bottom;
+}
+.header_tagline{
+    color: #373737;
+    font-weight: 600;
+}
+.header_button{
+    background: #D52A1B;
+    border-radius: 5px;
+    width: 193px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;  
+}
+.header_button:hover{
+    background: #bd191f;
+    color: white;
+    transition: 0.3s;
+}
+section h5{
+    color: #EC455A;
+}
+.services_card{
+    max-width: 320px;
+    min-height: 330px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.services_card h4{
+    font-weight: 600;
+    line-height: 37.5px;
+}
+footer{
+    min-height: 270px;
+    background-color: black;
+}
+footer h3, footer h4{
+    color: #EC1F26;
+}
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+  * {
+    zoom: 0.8;
+  }
+}
