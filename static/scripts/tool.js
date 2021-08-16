@@ -49,3 +49,7 @@ function goToEC3() {
 function goToICE() {
     window.open("https://circularecology.com/embodied-carbon-footprint-database.html");
 }
+function load_coming_soon() {
+    $("#coming_soon").fadeOut();
+    $("#coming_soon").fadeIn();
+}

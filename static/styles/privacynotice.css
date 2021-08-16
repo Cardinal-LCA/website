@@ -1,0 +1,109 @@
+body, html{
+    background-color: #f5f5f5;
+}
+a{
+    text-decoration: none;
+    color: #D52A1B;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #979797;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(175, 175, 175);
+}
+.navbar_resize {
+  min-height: 60px;
+  transition: 0.2s;
+  background-color: white;
+}
+.navbar_noresize {
+  min-height: 78px;
+  transition: 0.2s;
+}
+.navbar_color{
+    background-color: white !important;
+}
+.navbar_logo_noresize {
+  height: 52px;
+  transition: 0.2s;
+}
+.navbar_logo_resize {
+  height: 40px;
+  transition: 0.2s;
+  margin-top: -3px;
+}
+.navbar_toggler_noresize {
+  margin-top: 0px;
+  transition: 0.2s;
+}
+.navbar_toggler_resize {
+  margin-top: -6px;
+  transition: 0.2s;
+}
+.navbar-collapse{
+    text-align: center;
+}
+.nav-link{
+    font-weight: 500;
+}
+.nav_login{
+    background: #D52A1B;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px !important;
+    color: white !important;
+}
+.nav_login:hover{
+    background: #bd191f;
+    color: white;
+    transition: 0.3s;
+}
+.navbar-collapse{
+    border-radius: 0 0 5px 5px;
+}
+@media screen and (max-width: 992px) {
+    .navbar-collapse{
+        background-color: white;
+        text-align: center;
+    }
+}
+.company_text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 59px;
+    color: #AD1F12 !important;
+}
+#list_with_brackets li:before{
+    content: "(" counter(mycounter,lower-latin) ")";
+}
+
+#list_with_brackets{
+    counter-reset: item;
+}
+#list_with_brackets li{
+    display: block;
+    counter-increment: item;
+}
+#list_with_brackets li:before{
+    content: "(" counter(item) ") ";
+}
+footer{
+    min-height: 270px;
+    background-color: black;
+}
+footer h3, footer h4{
+    color: #EC1F26;
+}
