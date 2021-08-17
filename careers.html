@@ -155,9 +155,10 @@
                             </select>
                         </div>
                         <div class="mb-4">
-                            <label for="good_candidate" class="form-label">What makes you a good candidate for Cardinal
+                            <label for="why_good_candidate" class="form-label">What makes you a good candidate for
+                                Cardinal
                                 LCA?*</label>
-                            <textarea class="form-control" id="good_candidate" name="good_candidate"
+                            <textarea class="form-control" id="why_good_candidate" name="why_good_candidate"
                                 placeholder="Describe in brief that why you think you are a good candidate for our organization?"
                                 rows="4" required></textarea>
                         </div>
@@ -176,10 +177,10 @@
                                 placeholder="Enter link(s) to your work" rows="4" required></textarea>
                         </div>
                         <div class="mb-4">
-                            <label for="cv" class="form-label">Describe previous work experience*</label>
+                            <label for="experience" class="form-label">Describe previous work experience*</label>
                             <br>
                             <small>1 liner for each workplace - Title with responsibility</small>
-                            <textarea class="form-control" id="work_sample" name="work_sample"
+                            <textarea class="form-control" id="experience" name="experience"
                                 placeholder="Explain about your past experience which is relevant to the role you are applying for"
                                 rows="4" required></textarea>
                         </div>
@@ -301,7 +302,7 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxwmaBQw-ehFLkthAU29cVW1Ht0DI1FqVsml3y0nudamfPhpAOb8x1CJj6vYMGmgZDLgg/exec'
         const form = document.forms['subscribe']
-        const application_URL = '';
+        const application_URL = 'https://script.google.com/macros/s/AKfycbwugdQvTZFKh1L9ZEsNrpZ6bW2RO7lLh2p1vdR5AP8YJ3RRpg4x3GBWzlhaWfjO1TZoKg/exec';
         const application_form = document.forms['job_application'];
         form.addEventListener('submit', e => {
             e.preventDefault()
