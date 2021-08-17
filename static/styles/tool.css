@@ -88,9 +88,23 @@ a{
 }
 header{
     min-height: 800px;
-    background: url(../images/background/landing_background.jpg) no-repeat center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.header_container{
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.568);
+    overflow: hidden;   
+}
+#header_content{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 100%;
 }
 .header_tagline{
     color: #373737;

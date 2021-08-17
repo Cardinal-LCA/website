@@ -53,3 +53,22 @@ function load_coming_soon() {
     $("#coming_soon").fadeOut();
     $("#coming_soon").fadeIn();
 }
+
+var images = ["../static/images/tool/slideshow/general_script_layout.jpg",
+    "../static/images/tool/slideshow/graph_and_color.jpg",
+    "../static/images/tool/slideshow/graph_and_color_no_gh.jpg",
+    "../static/images/tool/slideshow/material_and_layer_assignment.jpg"];
+$(function () {
+    var i = 0;
+    $("#header").css("background-image", "url(images/" + images[i] + ")");
+    setInterval(function () {
+        i++;
+        if (i == images.length) {
+            i = 0;
+        }
+        $("#header").fadeOut(2000, function () {
+            $(this).css("background-image", "url(images/" + images[i] + ")");
+            $(this).fadeIn("slow");
+        });
+    }, 1000);
+});
