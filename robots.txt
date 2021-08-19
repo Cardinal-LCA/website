@@ -1,2 +1,8 @@
 User-Agent: *
 Disallow: 
+Sitemap: https://www.cardinallca.com/about.html
+Sitemap: https://www.cardinallca.com/careers.html
+Sitemap: https://www.cardinallca.com/cookiepolicy.html
+Sitemap: https://www.cardinallca.com/privacynotice.html
+Sitemap: https://www.cardinallca.com/termsandconditions.html
+Sitemap: https://www.cardinallca.com/tools.html
