@@ -21,3 +21,33 @@ $(window).scroll(function () {
         $(".bi-arrow-up-circle-fill").fadeOut();
     }
 });
+
+$("#work_sample").removeAttr('required');
+$("#experience").removeAttr('required');
+$("#cv_url").removeAttr('required');
+
+$("#work_sample_div").hide();
+$("#experience_div").hide();
+
+$("#role").change(function () {
+    stageChange($(this).val());
+});
+
+function stageChange(stateValue) {
+    if (stateValue == "Digital Content Creator") {
+        $("#work_sample_div").show();
+        $("#experience_div").show();
+        $("#cv_url").removeAttr('required');
+        $("#cv_url_label").html('Can we get the link to your CV?');
+        $("#work_sample").prop('required', true);
+        $("#experience").prop('required', true);
+    }
+    if (stateValue == "Database Manager/API Developer") {
+        $("#cv_url").prop('required', true);
+        $("#cv_url_label").html('Can we get the link to your CV?*');
+        $("#work_sample_div").hide();
+        $("#experience_div").hide();
+        $("#work_sample").removeAttr('required');
+        $("#experience").removeAttr('required');
+    }
+}
