@@ -89,6 +89,20 @@ a{
 /* .details_document p, .details_document h3{
     font-family: Calibri !important;
 } */
+#list_with_brackets li:before{
+    content: counter(mycounter,lower-latin) ")";
+}
+
+#list_with_brackets{
+    counter-reset: item;
+}
+#list_with_brackets li{
+    display: block;
+    counter-increment: item;
+}
+#list_with_brackets li:before{
+    content: counter(item) ") ";
+}
 footer{
     min-height: 270px;
     background-color: black;
