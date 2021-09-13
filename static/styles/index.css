@@ -160,3 +160,15 @@ footer{
 footer h3, footer h4{
     color: #EC1F26;
 }
+.popup_button{
+    background: #D52A1B;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;  
+}
+.popup_button:hover{
+    background: #bd191f;
+    color: white;
+    transition: 0.3s;
+}
