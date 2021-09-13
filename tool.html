@@ -156,113 +156,87 @@
                     <h2 class="h1 mt-4" style="color: #D52A1B;">Demos</h2>
                 </div>
                 <div class="col-12 text-center mt-5">
-                    <button class="header_button mx-3 mb-3" onclick="load_coming_soon()">General Set-up</button>
-                    <button class="header_button mx-3 mb-3" onclick="load_coming_soon()">Import Geometry</button>
-                    <button class="header_button mx-3 mb-3" onclick="load_coming_soon()">Select Material</button>
-                    <button class="header_button mx-3 mb-3" onclick="load_coming_soon()">Report</button>
-                    <button class="header_button mx-3 mb-3" onclick="load_coming_soon()">Visualization</button>
+                    <a class="header_button mx-3 mb-3" href="#import_geometry">Import Geometry</a>
+                    <a class="header_button mx-3 mb-3" href="#material_selection">Select Material</a>
+                    <a class="header_button mx-3 mb-3" href="#report_generation">Report Generation</a>
+                    <a class="header_button mx-3 mb-3" href="#output_visualization">Output & Visualization</a>
                 </div>
                 <div class="col-12 text-center mt-5">
-                    <img src="./static/images/demo/comingsoon.gif" class="w-75" id="coming_soon" alt="">
-                </div>
-            </div>
-            <!-- <div class="row mb-5" id="details">
-                <div class="col-12 text-center mt-5">
-                    <h2 class="h1 mt-4" style="color: #D52A1B;">Details</h2>
-                </div>
-                <div class="col-10 mx-auto text-center mt-5">
-                    The Cardinal LCA plug-in for Grasshopper has been designed for early-stage quantification of the
-                    environmental impact of
-                    building materials for a part or whole building analysis as well as comparative analyses of several
-                    design options. Very
-                    simple to use, the Cardinal LCA plug-in can be used by even beginners in Grasshopper.
-                </div>
-                <div class="col-12 text-center mt-5">
-                    <button onClick="goToSystemBoundary()" class="header_button mx-3 mb-3">System Boundary</button>
-                    <button onClick="goToStudyLimits()" class="header_button mx-3 mb-3">Study Limits</button>
-                    <button onClick="goToFunctionalUnit()" class="header_button mx-3 mb-3">Functional Unit</button>
-                    <button onClick="goToDataSource()" class="header_button mx-3 mb-3">Data Source</button>
-                </div>
-            </div>
-            <div class="row mb-5" id="systemBoundary">
-                <div class="col-12 text-center mt-5">
-                    <h2 class="h1 mt-4" style="color: #D52A1B;">System Boundary</h2>
-                </div>
-                <div class="col-10 mx-auto text-center mt-5">
-                    Currently, Cardinal LCA accounts for the Cradle-to-Gate life cycle of the studied object, also known
-                    as the Product
-                    stage, including the raw material supply, transport and manufacturing stages for the product. The
-                    published EPD from the
-                    data source includes the Product Stages (A1-A3), therefore, the plug-in currently works only for
-                    this stage.
-                    In the next stages, we shall expand to the full cradle-to-grave life cycle, with an option of
-                    including the building’s
-                    construction impacts and operational energy within the scope. Also, expansion to include
-                    architectural assemblies that
-                    shall include all materials required for the product’s manufacturing and use including hardware,
-                    sealants, adhesives,
-                    coatings, and finishing shall be incorporated. Further, currently, only the Global Warming
-                    Potential(GWP) values are
-                    analyzed. In the future versions, we shall expand to all environmental impact values and respective
-                    conversions for a holistic overview.
-                </div>
-            </div>
-            <div class="row mb-5" id="studyLimits">
-                <div class="col-12 text-center mt-5">
-                    <h2 class="h1 mt-4" style="color: #D52A1B;">Study Limits</h2>
-                </div>
-                <div class="col-10 mx-auto text-center mt-5">
-                    Cardinal LCA allows analysis for a respective set of geometries. This set may be a single building
-                    assembly (for
-                    example, a wall section), or a shoebox model for a building, or the whole building and even multiple
-                    buildings.
-                    Moreover, a comparative analysis of two or more design options has been facilitated through easy
-                    visualization.
-                    Currently, the possible geometry input includes the structural, architectural and interior systems
-                    of a building(s) for
-                    environmental impact comparison.
-                </div>
-            </div>
-            <div class="row mb-5" id="functionalUnit">
-                <div class="col-12 text-center mt-5">
-                    <h2 class="h1 mt-4" style="color: #D52A1B;">Functional Unit</h2>
-                </div>
-                <div class="col-10 mx-auto text-center mt-5">
-                    The functional units to quantify the values in the analysis of the product being studied. We follow
-                    the International
-                    System of Units (SI base units) for the quantification of building geometries and the environmental
-                    impacts. Assurance
-                    of the compatibility with the unit system and scope clarity for a single or comparative study, is
-                    the user’s or modeler’s responsibility.
-                </div>
-            </div>
-            <div class="row mb-5" id="dataSource">
-                <div class="col-12 text-center mt-5">
-                    <h2 class="h1 mt-4" style="color: #D52A1B;">Data Source</h2>
-                </div>
-                <div class="col-10 mx-auto text-center mt-5">
-                    Cardinal LCA currently utilizes two databases currently, namely, the EC3 database incubated at
-                    Carbon Leadership Forum
-                    and The Inventory of Carbon and Energy (ICE V3.0, Nov 2019) by Circular Ecology. Wherever data
-                    source was unavailable,
-                    proxies have been used referring to the US 2019-21 values. Uncertainty has been reduced by the use
-                    of geographic values,
-                    technical accuracy and/or available analogous data. However, the user/modeler shall be responsible
-                    for the accurate
-                    application of the datasets and material entries to the building.
-                    <br><br>
-                    The datasets used, and the details on the publishing of EPD, geographical precision, accuracy etc.
-                    are either mentioned,
-                    or can be checked with the respective database sources.
-                    <div class="col-12 text-center mt-5">
-                        <button onClick="goToEC3()" class="header_button mx-3 mb-3">About EC3</button>
-                        <button onClick="goToICE()" class="header_button mx-3 mb-3">About ICE</button>
+                    <h3 class="mb-4 mt-5 pt-5" id="import_geometry">
+                        <br>
+                        Import Geometry
+                    </h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rj5NCvJ7s1Y"
+                                title="YouTube video player" frameborder="0" class="w-100 demo_video mb-5"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="col-lg-6">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dlrk6T7vBbU"
+                                title="YouTube video player" frameborder="0" class="w-100 demo_video mb-5"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
-                    <br>
-                    Additionally, the user/modeler may choose to create a custom material by using information from a
-                    particular EPD.
+                    <h3 class="mb-4 mt-5 pt-5" id="material_selection">
+                        <br>
+                        Material Selection
+                    </h3>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <iframe width=" 560" height="315" src="https://www.youtube-nocookie.com/embed/bEzgNUajJK4"
+                                title="YouTube video player" frameborder="0" class="w-100 demo_video mb-5"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="col-lg-6">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9_VCWa9Go-Q"
+                                title="YouTube video player" frameborder="0" class="w-100 demo_video mb-5"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="col-lg-6">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/f6gEbN-sYQI"
+                                title="YouTube video player" frameborder="0" class="w-100 demo_video mb-5"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 mt-5 pt-5" id="report_generation">
+                        <br>
+                        Report Generation
+                    </h3>
+                    <div class="row justify-content-center">
+                        <div class=" col-lg-6">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EpRn2sDqdbY"
+                                title="YouTube video player" frameborder="0" class="w-100 demo_video mb-5"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <h3 class="mb-4 mt-5 pt-5" id="output_visualization">
+                        <br>
+                        Output & Visualization
+                    </h3>
+                    <div class="row justify-content-center">
+                        <div class=" col-lg-6">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QrRht6oIOm8"
+                                title="YouTube video player" frameborder="0" class="w-100 demo_video mb-5"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
 

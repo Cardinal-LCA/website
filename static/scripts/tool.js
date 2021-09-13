@@ -49,10 +49,6 @@ function goToEC3() {
 function goToICE() {
     window.open("https://circularecology.com/embodied-carbon-footprint-database.html");
 }
-function load_coming_soon() {
-    $("#coming_soon").fadeOut();
-    $("#coming_soon").fadeIn();
-}
 
 var images = ["../static/images/tool/slideshow/general_script_layout.jpg",
     "../static/images/tool/slideshow/graph_and_color.jpg",
@@ -71,4 +67,21 @@ $(function () {
             $(this).fadeIn("slow");
         });
     }, 1000);
+});
+
+var j = 0;
+const video_width = $(".demo_video").width()
+demo_videos = document.getElementsByClassName('demo_video')
+for (j = 0; j < demo_videos.length; j++) {
+    demo_videos[j].style.height = (9 / 16) * video_width + "px";
+}
+$(document).ready(function () {
+    $(window).resize(function () {
+        var j = 0;
+        const video_width = $(".demo_video").width()
+        demo_videos = document.getElementsByClassName('demo_video')
+        for (j = 0; j < demo_videos.length; j++) {
+            demo_videos[j].style.height = (9 / 16) * video_width + "px";
+        }
+    });
 });
