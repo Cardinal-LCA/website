@@ -62,6 +62,9 @@
                     <li class="nav-item">
                         <a class="nav-link active px-4" aria-current="page" href="./tool.html">Tool</a>
                     </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="./discussion.html">Discussion</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active px-4" aria-current="page" href="./careers.html">Careers</a>
                     </li>
@@ -1081,8 +1084,10 @@
                         <p class="text-white mt-2">
                             <small>
                                 By submitting your details you agree to the
-                                <a href="./termsandconditions.html" style="color:#D52A1B; text-decoration: none;">Terms
-                                    & Conditions</a>
+                                <a href="./termsandconditions.html" target="_blank"
+                                    style="color:#D52A1B; text-decoration: none;">
+                                    Terms & Conditions
+                                </a>
                             </small>
                         </p>
                         <button type="submit" class="btn btn-primary "
@@ -1123,7 +1128,7 @@
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => alert("Thank you for contacting! We will get back to you soon."))
+                .then(response => alert("Thank you for subscribing! We will get back to you soon."))
                 .catch(error => console.error(error.message))
             document.getElementById("subscribe").reset();
         });
