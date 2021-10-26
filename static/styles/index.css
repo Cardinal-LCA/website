@@ -172,3 +172,8 @@ footer h3, footer h4{
     color: white;
     transition: 0.3s;
 }
+@media screen and (max-width: 992px) {
+    .footer_right{
+        text-align: left !important;
+    }   
+}

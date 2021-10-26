@@ -105,8 +105,22 @@ header{
     min-height: 800px;
     background: #f5f5f5;
 }
+.news_button{
+    background: #D52A1B;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px !important;
+    color: white !important;
+    width: fit-content;
+}
+.news_button:hover{
+    background: #bd191f;
+    color: white;
+    transition: 0.3s;
+}
 .community{
-    height: 500px;
+    height: 400px;
     background: url('../images/background/community_background.jpg');
     background-size: cover;
     background-position: center;
@@ -124,11 +138,73 @@ header{
 .community_container h2{
     font-weight: 700;    
 }
-
+.news_item{
+    max-width: 500px;
+    overflow: hidden;
+    padding-bottom: 20px !important;
+}
+.news_item h5{
+    min-height: 70px;
+}
+.news_item p{
+    line-height: 2.5ex;
+    height: 10ex;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+}
+.news_item p::after{
+    content: "..." !important;
+    display: block !important;
+}
+@media screen and (max-width: 1200px) {
+    .news_item h5{
+        min-height: 120px;
+    }  
+}
+@media screen and (max-width: 992px) {
+    .news_item h5{
+        min-height: 95px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .news_item h5{
+        min-height: 0px;
+    }
+}
+.news_item button{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    font-size: 85%;
+    color: #D52A1B;
+}
+.news_item button:hover{
+    color: #bd191f;
+    transition: 0.3s;
+    background-color: transparent !important;
+}
+.news_item button:focus{
+    color: #bd191f;
+    transition: 0.3s;
+    background-color: transparent !important;
+    box-shadow: 0 0 0 0 transparent !important;
+    border: none !important;
+}
+.news_item button:active{
+    color: #bd191f;
+    transition: 0.3s;
+    background-color: transparent !important;
+}
 footer{
     min-height: 270px;
     background-color: black;
 }
 footer h3, footer h4{
     color: #EC1F26;
+}
+@media screen and (max-width: 992px) {
+    .footer_right{
+        text-align: left !important;
+    }   
 }

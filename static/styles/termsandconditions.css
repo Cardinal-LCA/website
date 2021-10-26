@@ -110,3 +110,8 @@ footer{
 footer h3, footer h4{
     color: #EC1F26;
 }
+@media screen and (max-width: 992px) {
+    .footer_right{
+        text-align: left !important;
+    }   
+}
