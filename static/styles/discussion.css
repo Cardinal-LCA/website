@@ -1,63 +1,79 @@
-body, html{
+body, html {
     background-color: #f5f5f5;
 }
-a{
+
+a {
     text-decoration: none;
     color: #D52A1B;
 }
-*{
+
+* {
     font-family: 'Poppins', sans-serif;
 }
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background-color: #f5f5f5;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: #979797;
     border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(175, 175, 175);
 }
+
 .navbar_resize {
-  min-height: 60px;
-  transition: 0.2s;
-  background-color: white;
+    min-height: 60px;
+    transition: 0.2s;
+    background-color: white;
 }
+
 .navbar_noresize {
-  min-height: 78px;
-  transition: 0.2s;
+    min-height: 78px;
+    transition: 0.2s;
 }
-.navbar_color{
+
+.navbar_color {
     background-color: white !important;
 }
+
 .navbar_logo_noresize {
-  height: 52px;
-  transition: 0.2s;
+    height: 52px;
+    transition: 0.2s;
 }
+
 .navbar_logo_resize {
-  height: 40px;
-  transition: 0.2s;
-  margin-top: -3px;
+    height: 40px;
+    transition: 0.2s;
+    margin-top: -3px;
 }
+
 .navbar_toggler_noresize {
-  margin-top: 0px;
-  transition: 0.2s;
+    margin-top: 0px;
+    transition: 0.2s;
 }
+
 .navbar_toggler_resize {
-  margin-top: -6px;
-  transition: 0.2s;
+    margin-top: -6px;
+    transition: 0.2s;
 }
-.navbar-collapse{
+
+.navbar-collapse {
     text-align: center;
 }
-.nav-link{
+
+.nav-link {
     font-weight: 500;
 }
-.nav_login{
+
+.nav_login {
     background: #D52A1B;
     border-radius: 5px;
     text-decoration: none;
@@ -65,28 +81,33 @@ a{
     padding: 8px 20px !important;
     color: white !important;
 }
-.nav_login:hover{
+
+.nav_login:hover {
     background: #bd191f;
     color: white;
     transition: 0.3s;
 }
-.navbar-collapse{
+
+.navbar-collapse {
     border-radius: 0 0 5px 5px;
 }
+
 @media screen and (max-width: 992px) {
-    .navbar-collapse{
+    .navbar-collapse {
         background-color: white;
         text-align: center;
     }
 }
-.company_text{
+
+.company_text {
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
     line-height: 59px;
     color: #AD1F12 !important;
 }
-header{
+
+header {
     min-height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,14 +117,17 @@ header{
     -webkit-filter: blur(100px);
     background-attachment: fixed;
 }
-.header_container{
+
+.header_container {
     background-color: rgba(255, 255, 255, 0.911);
-    overflow: hidden;   
+    overflow: hidden;
 }
-#header_content{
+
+#header_content {
     background: #f5f5f5;
 }
-.news_button{
+
+.news_button {
     background: #D52A1B;
     border-radius: 5px;
     text-decoration: none;
@@ -112,12 +136,14 @@ header{
     color: white !important;
     width: fit-content;
 }
-.news_button:hover{
+
+.news_button:hover {
     background: #bd191f;
     color: white;
     transition: 0.3s;
 }
-.community{
+
+.community {
     height: 100vh;
     background: url('../images/background/community_background.jpg');
     background-size: cover;
@@ -125,7 +151,8 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.community_container{
+
+.community_container {
     background-color: rgba(255, 255, 255, 0.6);
     width: 100%;
     height: 100%;
@@ -134,43 +161,52 @@ header{
     justify-content: center;
     align-items: center;
 }
-.community_container h2{
-    font-weight: 700;    
+
+.community_container h2 {
+    font-weight: 700;
 }
-.news_item{
+
+.news_item {
     max-width: 500px;
     overflow: hidden;
     padding-bottom: 20px !important;
 }
-.news_item h5{
+
+.news_item h5 {
     min-height: 70px;
 }
-.news_item p{
+
+.news_item p {
     line-height: 2.5ex;
     height: 10ex;
     overflow: hidden;
     margin-bottom: 0 !important;
 }
-.news_item p::after{
+
+.news_item p::after {
     content: "..." !important;
     display: block !important;
 }
+
 @media screen and (max-width: 1200px) {
-    .news_item h5{
+    .news_item h5 {
         min-height: 120px;
-    }  
+    }
 }
+
 @media screen and (max-width: 992px) {
-    .news_item h5{
+    .news_item h5 {
         min-height: 95px;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .news_item h5{
+    .news_item h5 {
         min-height: 0px;
     }
 }
-.news_item button{
+
+.news_item button {
     background: transparent;
     border: none;
     outline: none;
@@ -178,32 +214,38 @@ header{
     font-size: 85%;
     color: #D52A1B;
 }
-.news_item button:hover{
+
+.news_item button:hover {
     color: #bd191f;
     transition: 0.3s;
     background-color: transparent !important;
 }
-.news_item button:focus{
+
+.news_item button:focus {
     color: #bd191f;
     transition: 0.3s;
     background-color: transparent !important;
     box-shadow: 0 0 0 0 transparent !important;
     border: none !important;
 }
-.news_item button:active{
+
+.news_item button:active {
     color: #bd191f;
     transition: 0.3s;
     background-color: transparent !important;
 }
-footer{
+
+footer {
     min-height: 270px;
     background-color: black;
 }
-footer h3, footer h4{
+
+footer h3, footer h4 {
     color: #EC1F26;
 }
+
 @media screen and (max-width: 992px) {
-    .footer_right{
+    .footer_right {
         text-align: left !important;
-    }   
+    }
 }
