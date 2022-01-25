@@ -25,7 +25,3 @@ $(window).scroll(function () {
         $(".bi-arrow-up-circle-fill").fadeOut();
     }
 });
-
-$(window).on('load', function () {
-    $('#myModal').modal('show');
-});
